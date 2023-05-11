@@ -20,7 +20,7 @@ router.route('/').get(async(req, res) => {
     const posts = await Post.find({});
     res.status(200).json({ success: true, data: posts });
   } catch (err) {
-    res.status(500).json({ success: false, message: 'Fetching posts failed, please try again' });
+    res.status(500).json({ success: false, message: '获取帖子失败，请重试' });
   }
 });
 
@@ -38,7 +38,7 @@ router.route('/').post(async(req, res) => {
 
     res.status(201).json({ success: true, data: newPost });
   } catch (err) {
-    res.status(500).json({ success: false, message: 'Unable to create a post, please try again' });
+    res.status(500).json({ success: false, message: '无法创建帖子，请重试！' });
   }
 });
 

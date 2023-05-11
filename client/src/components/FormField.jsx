@@ -16,7 +16,7 @@ const FormField = ({ labelName, type, name, placeholder, value, handleChange, is
             onClick={handleSurpriseMe}
             className='font-semibold text-xs bg-[#ECECF1] py-1 px-2 rounded-[5px] text-black'
           >
-            Surprise me
+            给我惊喜
           </button>
         )}
       </div>
