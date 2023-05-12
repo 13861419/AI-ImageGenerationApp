@@ -147,7 +147,7 @@ const CreatePost = () => {
             type="submit"
             className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
-            {loading ? '分享...' : '与社区分享'}
+            {loading ? '分享中...' : '与社区分享'}
           </button>
 
         </div>
