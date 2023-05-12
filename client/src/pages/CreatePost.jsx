@@ -19,7 +19,7 @@ const CreatePost = () => {
     if(form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://43.153.226.118:8080/api/v1/dalle', {
+        const response = await fetch('http://www.songzhijun.cn:8080/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('http://43.153.226.118:8080/api/v1/post', {
+        const response = await fetch('http://www.songzhijun.cn:8080/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
